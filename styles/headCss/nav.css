@@ -1,26 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 10px;
-    scroll-behavior: smooth;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.container {
-    max-width: 1225px;
-    margin: 0 auto;
-}
-
 .nav_top_wrap {
-    background-color: rgb(246, 246, 248,1);
+    background-color: rgb(246, 246, 248, 1);
 }
 
 .nav_top {
@@ -45,7 +24,7 @@ a {
 .nav_top_line {
     width: 1px;
     height: 1.9rem;
-    background-color: rgb(14, 24, 44,1);
+    background-color: rgb(14, 24, 44, 1);
     margin: 0 1.4rem;
 }
 
@@ -56,7 +35,7 @@ a {
 }
 
 .nav_top_righblock_help {
-    color: rgb(14, 24, 44,1) ;
+    color: rgb(14, 24, 44, 1);
 }
 
 .nav_top_righblock_language {
@@ -84,39 +63,48 @@ a {
     letter-spacing: 0%;
     text-align: left;
 }
-.nav_leftblock{
+
+.nav_leftblock {
     display: flex;
     align-items: center;
 }
-.nav_content{
+
+.nav_content {
     margin-left: 2.4rem;
 }
-.nav_content_text{
+
+.nav_content_text {
     margin-left: 0.5rem;
 }
-.search{
+
+.search {
     width: 35.6rem;
     border: 1px solid rgb(143, 145, 149);
     border-radius: 50px;
     background-color: rgb(246, 246, 248, 1);
     display: flex;
 }
-.search_input{
-    margin: 2rem 1.5rem;
+
+.search_input {
+    margin: 1rem 1.5rem;
     padding: 1rem 0rem;
+    width: 100%;
     outline: none;
     border: none;
     background-color: rgb(246, 246, 248, 1);
 }
-.search_input::placeholder{
+
+.search_input::placeholder {
     font-size: 1.4rem;
 }
-.nav_bottom{
+
+.nav_bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.nav_bottom_content{
+
+.nav_bottom_content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,6 +114,7 @@ a {
     letter-spacing: 0%;
     text-align: left;
 }
-.nav_bottom_content_text{
+
+.nav_bottom_content_text {
     margin-left: 1rem;
 }
