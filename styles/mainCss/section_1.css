@@ -92,7 +92,9 @@
     background: rgba(14, 24, 44, 0.01);
     padding: 2rem;
 }
-
+.section_1 .grid_bottom .card:hover{
+    box-shadow: 0 4px 8px rgba(14, 24, 44, 0.1);
+}
 .section_1 .grid_bottom .text {
     font-family: SFProDisplay-Regular;
     font-size: 1.6rem;
@@ -100,4 +102,18 @@
     letter-spacing: 0%;
     text-align: left;
     color: rgb(14, 24, 44);
+}
+
+@media (max-width: 1024px) {
+    .section_1 .grid {
+        grid-template-columns: 1fr;
+    }
+    .section_1 .feature_box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .trustpay_box{
+        margin-bottom: 0;
+    }
 }

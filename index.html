@@ -35,14 +35,13 @@
         <nav class="nav container">
           <div class="logo"><img src="assets/imag/logo.png" alt="logo" /></div>
           <div class="nav_leftblock">
-
             <div class="search">
               <input class="search_input" type="text" placeholder="Поиск..." />
               <div class="search_icon">
-                <img src="assets/icon/search.svg" alt="">
+                <img src="assets/icon/search.svg" alt="" />
               </div>
             </div>
-            
+
             <a href="!#" class="nav_content">
               <img src="assets/icon/compare.svg" alt="" />
               <span class="nav_content_text">Сравнивать</span>
@@ -180,7 +179,7 @@
                   </button>
                 </div>
               </div>
-              <div class="swiper-slide"></div>
+              <div class="swiper-slide slide"></div>
             </div>
             <div class="swiper-button-next-custom">
               <img src="assets/icon/arrowright.svg" alt="" />
@@ -189,7 +188,6 @@
               <img src="assets/icon/arrowleft.svg" alt="" />
             </div>
           </div>
-
           <div class="feature_box">
             <div class="trustpay_box">
               <div class="iman">
@@ -833,7 +831,7 @@
     </main>
     <footer class="">
       <div class="footer_menu container">
-        <ol >
+        <ol>
           <li class="title">Покупателям</li>
           <li class="text"><a href=""></a>Как сделать заказ</li>
           <li class="text"><a href=""></a>Рассрочка</li>
@@ -843,7 +841,7 @@
           <li class="text"><a href="">Гарантия</a></li>
           <li class="text"><a href="">Обратная связь</a></li>
         </ol>
-        <ol >
+        <ol>
           <li class="title">Покупателям</li>
           <li class="text"><a href=""></a>Как сделать заказ</li>
           <li class="text"><a href=""></a>Рассрочка</li>
@@ -853,7 +851,7 @@
           <li class="text"><a href="">Гарантия</a></li>
           <li class="text"><a href="">Обратная связь</a></li>
         </ol>
-        <ol >
+        <ol>
           <li class="title">Покупателям</li>
           <li class="text"><a href=""></a>Как сделать заказ</li>
           <li class="text"><a href=""></a>Рассрочка</li>
@@ -863,7 +861,7 @@
           <li class="text"><a href="">Гарантия</a></li>
           <li class="text"><a href="">Обратная связь</a></li>
         </ol>
-        <ol >
+        <ol>
           <li class="title">Покупателям</li>
           <li class="text"><a href=""></a>Как сделать заказ</li>
           <li class="text"><a href=""></a>Рассрочка</li>
@@ -875,7 +873,9 @@
         </ol>
       </div>
       <div class="footer_social container">
-        <p class="copyright_notice"> ©  2022 Telefonchi.uz.  Tashkent, Uzbekistan</p>
+        <p class="copyright_notice">
+          © 2022 Telefonchi.uz. Tashkent, Uzbekistan
+        </p>
         <div class="social_media">
           <a href="!#" target="_blank">
             <img src="assets/icon/facebook.svg" alt="Facebook" />
@@ -895,11 +895,27 @@
       <div class="info container">
         <div class="block_1">
           <h4 class="info_title">Не только покупать, но и продавать</h4>
-          <p class="info_text">Локальные продавцы в странах, где уже доступен ZoodMall, могут построить свой бизнес B2C e-commerce, используя возможности торговой площадки. Размещая товары с качественным описанием и фото, вы получите доступ к более 225 млн потенциальных клиентов. Описания продукции автоматически переводятся на 8 языков. Комиссия сервиса составляет от 2 до 15 %. Также всегда доступна поддержка</p>
+          <p class="info_text">
+            Локальные продавцы в странах, где уже доступен ZoodMall, могут
+            построить свой бизнес B2C e-commerce, используя возможности торговой
+            площадки. Размещая товары с качественным описанием и фото, вы
+            получите доступ к более 225 млн потенциальных клиентов. Описания
+            продукции автоматически переводятся на 8 языков. Комиссия сервиса
+            составляет от 2 до 15 %. Также всегда доступна поддержка
+          </p>
         </div>
         <div class="block_2">
-          <h4 class="info_title">Как оплачивать заказ и куда его доставляют?</h4>
-          <p class="info_text">Купив понравившейся товар на ZoodMall, вы можете воспользоваться услугой беспроцентной рассрочки «Купи сейчас — плати потом». Система ZoodPay позволяет оплачивать продукцию 4 или 6 равными платежами. Вы будете заранее получать уведомления, чтобы не забыть внести нужную сумму. Рассрочку можно брать в национальной валюте, стоимость товара фиксируется в момент покупки и не изменяется в дальнейшем.</p>
+          <h4 class="info_title">
+            Как оплачивать заказ и куда его доставляют?
+          </h4>
+          <p class="info_text">
+            Купив понравившейся товар на ZoodMall, вы можете воспользоваться
+            услугой беспроцентной рассрочки «Купи сейчас — плати потом». Система
+            ZoodPay позволяет оплачивать продукцию 4 или 6 равными платежами. Вы
+            будете заранее получать уведомления, чтобы не забыть внести нужную
+            сумму. Рассрочку можно брать в национальной валюте, стоимость товара
+            фиксируется в момент покупки и не изменяется в дальнейшем.
+          </p>
         </div>
       </div>
     </footer>
@@ -920,6 +936,11 @@
         navigation: {
           nextEl: ".swiper-button-next-custom",
           prevEl: ".swiper-button-prev-custom",
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 4,
+          },
         },
       });
     </script>

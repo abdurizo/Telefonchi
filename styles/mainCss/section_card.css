@@ -10,7 +10,9 @@
     padding: 3rem;
     position: relative;
 }
-
+.section_card .card:hover {
+    box-shadow: 0 4px 8px rgba(14, 24, 44, 0.1);
+}
 .section_card .card .title {
     font-family: SFProDisplay-Medium;
     font-size: 3.6rem;
@@ -59,4 +61,16 @@
     top: 1rem;
     right: 0rem;
     transform: rotate(-10deg) scale(0.8) scaleX(1.2);
+}
+@media (max-width: 1024px) {
+    .section_card {
+     grid-template-columns: 1fr;
+     gap: 4rem;
+    }
+    .section_card .card {
+        width: 100%;
+        max-width: 550px;
+        /* max-width: calc((100% - 40px) / 2); */
+        justify-self: center;
+    }
 }
