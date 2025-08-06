@@ -116,4 +116,8 @@
     .trustpay_box{
         margin-bottom: 0;
     }
+    .section_1 .grid_bottom{
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;        
+    }
 }

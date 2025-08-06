@@ -34,3 +34,14 @@
     line-height: 2.4rem;
     letter-spacing: 0%;
 }
+
+@media(max-width: 1024px) {
+    /* .section_banner {
+        padding: 6rem;
+    }
+
+    .section_banner::after {
+        width: 40rem;
+        height: 19rem;
+    } */
+}

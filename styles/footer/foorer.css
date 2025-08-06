@@ -78,3 +78,14 @@ footer {
     text-align: left;
     padding-top: 1.5rem;
 }
+
+@media(max-width: 1024px){
+.footer_menu{
+    gap: 0;
+}
+}
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 10px;
+    }
+}

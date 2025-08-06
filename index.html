@@ -34,6 +34,9 @@
       <div class="nav_wrap">
         <nav class="nav container">
           <div class="logo"><img src="assets/imag/logo.png" alt="logo" /></div>
+          <div class="burger">
+            <span></span>
+          </div>
           <div class="nav_leftblock">
             <div class="search">
               <input class="search_input" type="text" placeholder="Поиск..." />
@@ -939,8 +942,16 @@
         },
         breakpoints: {
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 5,
+            spaceBetween:30,
           },
+        850:{
+          slidesPerView: 4.5,
+          spaceBetween:20,
+        },
+        764:{
+          slidesPerView: 3.5,
+        }
         },
       });
     </script>
