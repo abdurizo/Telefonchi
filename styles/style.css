@@ -2,6 +2,7 @@
 @import url(headCss/nav.css);
 @import url(mainCss/main.css);
 @import url(swiper.css);
+@import url(footer/foorer.css);
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +18,9 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
+li{
+    list-style-type: none;
+}
 .container {
     max-width: 134rem;
     margin: 0 auto;

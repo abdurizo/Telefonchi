@@ -1,5 +1,6 @@
 .nav_top_wrap {
     background-color: rgb(246, 246, 248, 1);
+    font-family: SFProDisplay-Regular;
 }
 
 .nav_top {
@@ -11,8 +12,7 @@
 }
 
 .nav_top_leftblock {
-    color: rgb(45, 47, 52);
-    font-weight: 400;
+    color: rgb(95, 93, 93);
     line-height: 1.06rem;
     letter-spacing: 0%;
     text-align: left;
@@ -35,7 +35,7 @@
 }
 
 .nav_top_righblock_help {
-    color: rgb(14, 24, 44, 1);
+    color: rgb(95, 93, 93);
 }
 
 .nav_top_righblock_language {
@@ -51,6 +51,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: SFProDisplay-Regular;
 }
 
 .nav_content {
@@ -78,24 +79,44 @@
 }
 
 .search {
-    width: 35.6rem;
-    border: 1px solid rgb(143, 145, 149);
     border-radius: 50px;
     background-color: rgb(246, 246, 248, 1);
     display: flex;
+    outline: none;
+    max-height: 5.5rem;
+}
+.search:hover{
+    border: 1px solid #ccc;
+}
+.search:hover .search_input {
+    width: 35.6rem;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    transition: .3s;
 }
 
 .search_input {
-    margin: 1rem 1.5rem;
-    padding: 1rem 0rem;
-    width: 100%;
+    width: 0rem;
     outline: none;
     border: none;
     background-color: rgb(246, 246, 248, 1);
+    padding: 0rem;
+    border-radius: 50px;
+    transition: .1s;
+    font-size: 1.4rem;
 }
 
 .search_input::placeholder {
     font-size: 1.4rem;
+}
+
+.search_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 193, 5, 1);
+    border-radius: 100%;
+    padding: 1.7rem;
 }
 
 .nav_bottom {
