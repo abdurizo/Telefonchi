@@ -1,0 +1,10 @@
+@import url('./section_1.css');
+@import url('./section_discounts.css');
+@import url('./section_card.css');
+@import url('./section_banner.css');
+.main{
+    margin-top: 3rem !important;
+}
+.section{
+    margin-top: 7rem;
+}
