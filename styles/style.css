@@ -13,7 +13,9 @@ html {
     font-size: 10px;
     scroll-behavior: smooth;
 }
-
+body{
+    height: 100%;
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -21,9 +23,19 @@ a {
 li{
     list-style-type: none;
 }
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* overflow-x: hidden; */
+}
+.main{
+    flex: 1 1 auto;
+}
 .container {
     max-width: 134rem;
     margin: 0 auto;
+    overflow-x: hidden;
 }
  .view_all{
     background: linear-gradient(89.03deg, #FFB905 1.26%, #FFC805 98.89%);
@@ -57,7 +69,7 @@ li{
 @media (max-width: 1024px) {
     .container {
         padding: 0 10px;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
 }
 @media(max-width:992px){

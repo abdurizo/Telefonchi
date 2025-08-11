@@ -9,7 +9,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     border-bottom: 1px solid rgb(255, 255, 255);
-    padding: 6rem 0;
+    padding: 60px 0;
     gap: 28rem;
 }
 
@@ -82,10 +82,9 @@ footer {
 @media(max-width: 1024px){
 .footer_menu{
     gap: 0;
+     padding: 6rem 10px !important;
 }
+.footer_social{
+    padding-top: 3rem !important;
 }
-@media (max-width: 1024px) {
-    .container {
-        padding: 0 10px;
-    }
 }
