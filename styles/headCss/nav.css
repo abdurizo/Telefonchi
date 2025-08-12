@@ -1,8 +1,3 @@
-.header {
-    /* display: none; */
-    position: relative;
-}
-
 .nav_top_wrap {
     background-color: rgb(246, 246, 248, 1);
     font-family: SFProDisplay-Regular;
@@ -154,7 +149,11 @@
 .nav_bottom_content_text {
     margin-left: 1rem;
 }
-
+@media(max-width:1200px){
+    .search_input {
+        width: 30rem;
+    }
+}
 @media(max-width:1024px) {
     .search_input {
         width: 30rem;

@@ -1,18 +1,21 @@
 .section_card {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     gap: 3rem;
 }
 
 .section_card .card {
+    grid-column: span 4;
     border: 1px solid rgba(93, 95, 239, 0.1);
     border-radius: 10px;
     padding: 3rem;
     position: relative;
 }
+
 .section_card .card:hover {
     box-shadow: 0 4px 8px rgba(14, 24, 44, 0.1);
 }
+
 .section_card .card .title {
     font-family: SFProDisplay-Medium;
     font-size: 3.6rem;
@@ -36,37 +39,53 @@
     top: -5rem;
     right: -3rem;
     transition: 0.3s;
+    z-index: -1;
 }
 
 .section_card .yellow {
     background: rgba(255, 193, 5, 0.1);
 }
+
 .section_card .yellow:hover .image {
     top: 0rem;
     transform: rotate(30deg) scale(0.8);
 }
+
 .section_card .blue {
     background: rgba(30, 126, 238, 0.1);
 }
 
 .section_card .blue:hover .image {
     top: -3rem;
-    transform: scaleX(-1);;
+    transform: scaleX(-1);
+    ;
 }
 
 .section_card .green {
     background: rgba(77, 124, 82, 0.1);
 }
+
 .section_card .green:hover .image {
     top: 1rem;
     right: 0rem;
     transform: rotate(-10deg) scale(0.8) scaleX(1.2);
 }
+
+@media (max-width: 1200px) {
+    .section_card .card .title {
+        font-size: 3rem;
+    }
+    .section_card .green .image{
+       right: -15px;
+    }
+}
+
 @media (max-width: 1024px) {
     .section_card {
-     grid-template-columns: 1fr;
-     gap: 4rem;
+        grid-template-columns: 1fr;
+        gap: 4rem;
     }
+
     .section_card .card {
         width: 100%;
         max-width: 550px;

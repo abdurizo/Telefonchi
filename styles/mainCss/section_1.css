@@ -1,7 +1,15 @@
 .section_1 .grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
     gap: 3rem;
+}
+
+.child1 {
+    grid-column: span 8;
+}
+
+.feature_box {
+    grid-column: span 4;
 }
 
 .trustpay_box {
@@ -92,9 +100,11 @@
     background: rgba(14, 24, 44, 0.01);
     padding: 2rem;
 }
-.section_1 .grid_bottom .card:hover{
+
+.section_1 .grid_bottom .card:hover {
     box-shadow: 0 4px 8px rgba(14, 24, 44, 0.1);
 }
+
 .section_1 .grid_bottom .text {
     font-family: SFProDisplay-Regular;
     font-size: 1.6rem;
@@ -104,20 +114,25 @@
     color: rgb(14, 24, 44);
 }
 
+@media(max-width:1200px){
+.feature_box .title{
+    font-size: 2.6rem;
+}
+}
 @media (max-width: 1024px) {
-    .section_1 .grid {
-        grid-template-columns: 1fr;
-    }
+
     .section_1 .feature_box {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
-    .trustpay_box{
+
+    .trustpay_box {
         margin-bottom: 0;
     }
-    .section_1 .grid_bottom{
-        grid-template-columns: repeat(3,1fr);
-        gap: 2rem;        
+
+    .section_1 .grid_bottom {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 }

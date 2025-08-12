@@ -1,22 +1,24 @@
  .swiper {
      max-width: 100%;
      max-height: 100%;
-     /* display: none !important; */
  }
 
  .section_1 .swiper-slide {
      background: url('../assets/imag/Rectangle 6.jpg');
+     background-size: cover;
      position: relative;
+     overflow: hidden;
+     border-radius: 10px;
  }
 
  .section_1 .slide::after {
      content: '';
      position: absolute;
-     top: 0px;
+     top: 12px;
      right: 0px;
      width: 533px;
      height: 420px;
-     z-index: 1;
+     z-index: -1;
      background: url('../assets/imag/Mask Group.png') no-repeat;
      background-size: cover;
  }
@@ -122,4 +124,9 @@
      line-height: 2.1rem;
      letter-spacing: 0%;
      text-align: left;
+ }
+ @media(max_width:1200px){
+    .section_1 .swiper-slide .title{
+        font-size: 3rem;
+    }
  }
