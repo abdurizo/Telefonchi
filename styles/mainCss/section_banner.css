@@ -1,23 +1,27 @@
 .section_banner {
     background: rgba(93, 95, 239, 0.1);
     margin-top: 12.9rem;
-    text-align: left;
+    padding: 9rem;
     position: relative;
-    padding: 9.4rem;
+}
+
+.section_banner article {
     display: flex;
+    align-items: center;
     justify-content: end;
 }
 
-.section_banner::after {
-    content: "";
+.section_banner_image {
     position: absolute;
-    top: -5rem;
-    left: 5rem;
-    width: 60.4rem;
-    height: 39rem;
-    background: url('../../assets/imag/Mask.png');
-    background-size: cover;
+    top: -30px;
+    left: 90px;
+    width: 490px;
     z-index: -1;
+}
+
+.section_banner_image img {
+    width: 100%;
+    height: 100%;
 }
 
 .section_banner h2 {
@@ -35,11 +39,32 @@
     letter-spacing: 0%;
 }
 
-@media(max-width: 850px) {
-    .section_banner::after {
-        left: 0;
-        width: 55rem;
-        height: 39rem;
+@media(max-width: 992px) {
+    .section_banner_image {
+        left: 50px;
+        width: 450px;
+        height: 360px;
+    }
+}
 
+@media(max-width: 850px) {
+    .section_banner {
+        padding: 7rem;
+
+    }
+
+    .section_banner h2 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+    }
+
+    .section_banner p {
+        font-size: 1.6rem;
+    }
+
+    .section_banner_image {
+        left: 30px;
+        width: 350px;
+        height: 300px;
     }
 }

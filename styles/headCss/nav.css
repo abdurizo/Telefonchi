@@ -75,6 +75,11 @@
 .nav_leftblock {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.fixed_nav {
+    display: none;
 }
 
 .nav_content {
@@ -149,14 +154,17 @@
 .nav_bottom_content_text {
     margin-left: 1rem;
 }
-@media(max-width:1200px){
+
+@media(max-width:1200px) {
     .search_input {
         width: 30rem;
+
     }
 }
+
 @media(max-width:1024px) {
     .search_input {
-        width: 30rem;
+        width: 25rem;
     }
 
     .nav_content {
@@ -166,16 +174,102 @@
 
 @media(max-width:992px) {
     .search_icon {
-        padding: 1rem;
+        /* padding: 1rem; */
     }
 }
 
+.burger {
+    display: none;
+}
+
 @media(max-width:850px) {
+    .burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+
+    .burger::after,
+    .burger::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+    }
+
+    .burger::before {
+        top: 0;
+    }
+
+    .burger::after {
+        bottom: 0;
+    }
+
+    .burger span {
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+    }
+
     .nav_leftblock {
-    background-color: aqua;
-     position: fixed;
-     bottom: 0px;
-     left: 5px;
-     right: 5px;
+        display: none;
+    }
+
+    .fixed_nav {
+        display: block;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 1;
+        margin: auto;
+        width: 60%;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        justify-content: space-around;
+        padding: 0.5rem;
+    }
+
+    .fixed_nav .search_input {
+        display: none;
+    }
+
+    .search_icon {
+        padding: 0.7rem;
+    }
+
+    .fixed_nav .nav_content span {
+        display: none;
+    }
+
+    .middle {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .nav_bottom_med {
+        /* display: none; */
+        background-color: antiquewhite;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+
+    .nav_bottom {
+        margin-top: 90px !important;
+        flex-direction: column;
+        align-items: start;
     }
 }

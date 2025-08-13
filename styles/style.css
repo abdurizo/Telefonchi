@@ -29,6 +29,11 @@ a {
 li {
     list-style-type: none;
 }
+button{
+    outline: none;
+    border: none;
+    background: inherit;
+}
 
 .wrapper {
     min-height: 100%;
@@ -82,7 +87,7 @@ li {
 
 @media(max-width:992px) {
     html {
-        font-size: 8px;
+        /* font-size: 8px; */
     }
 }
 

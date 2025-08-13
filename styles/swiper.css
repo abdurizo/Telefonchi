@@ -19,7 +19,7 @@
      width: 533px;
      height: 420px;
      z-index: -1;
-     background: url('../assets/imag/Mask Group.png') no-repeat;
+     background: url('../assets/imag/Mask Group.png') no-repeat center;
      background-size: cover;
  }
 
@@ -52,13 +52,16 @@
      height: 100%;
      object-fit: cover;
  }
- .swiper-slide{
-    transition: 10s;
+
+ .swiper-slide {
+     transition: 10s;
  }
-.swiper-slide:hover{
-    box-shadow: 0px 0px 20px rgba(14, 24, 44, 0.1);
-    transition: 0.3s;
-}
+
+ .swiper-slide:hover {
+     box-shadow: 0px 0px 20px rgba(14, 24, 44, 0.1);
+     transition: 0.3s;
+ }
+
  .swiper-button-prev-custom,
  .swiper-button-next-custom {
      position: absolute;
@@ -125,8 +128,15 @@
      letter-spacing: 0%;
      text-align: left;
  }
- @media(max_width:1200px){
-    .section_1 .swiper-slide .title{
-        font-size: 3rem;
-    }
+
+ @media(max-width:1200px) {
+     .section_1 .swiper-slide .title {
+         font-size: 3rem;
+     }
+ }
+
+ @media(max-width:850px) {
+     .section_1 .swiper-slide .content {
+         margin: 5rem 3rem;
+     }
  }

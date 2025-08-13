@@ -11,7 +11,30 @@
 </head>
 
 <body>
-  
+<div class="nav_leftblock fixed_nav">
+          <div class="search">
+            <input class="search_input" type="text" placeholder="Поиск..." />
+            <button class="search_icon">
+              <img src="assets/icon/search.svg" alt="" />
+            </button>
+          </div>
+          <a href="!#" class="nav_content">
+            <img src="assets/icon/compare.svg" alt="" />
+            <span class="nav_content_text">Сравнивать</span>
+          </a>
+          <a href="!#" class="nav_content">
+            <img src="assets/icon/currency.svg" alt="" />
+            <span class="nav_content_text">Сравнивать</span>
+          </a>
+          <a href="!#" class="nav_content">
+            <img src="assets/icon/shopping-cart.svg" alt="" />
+            <span class="nav_content_text">Сравнивать</span>
+          </a>
+          <a href="!#" class="nav_content">
+            <img src="assets/icon/user.svg" alt="" />
+            <span class="nav_content_text">Сравнивать</span>
+          </a>
+        </div>
   <div class="wrapper">
     <div class="nav_top_wrap">
       <nav class="nav_top container">
@@ -25,19 +48,23 @@
         <div class="nav_top_righblock">
           <span class="nav_top_righblock_help">Нужен помощь? Позвони нам:</span>
           <span>+998 90 000 00 01</span>
-          <div class="nav_top_righblock_language">Русский</div>
         </div>
       </nav>
     </div>
     <div class="nav_wrap middle">
       <nav class="nav container">
-        <div class="logo"><img src="assets/imag/logo.png" alt="logo" /></div>
-        <div class="nav_leftblock">
+        <div class="logo">
+          <img src="assets/imag/logo.png" alt="logo" />
+        </div>
+        <button class="burger">
+          <span></span>
+        </button>
+        <div class="nav_leftblock ">
           <div class="search">
             <input class="search_input" type="text" placeholder="Поиск..." />
-            <div class="search_icon">
+            <button class="search_icon">
               <img src="assets/icon/search.svg" alt="" />
-            </div>
+            </button>
           </div>
           <a href="!#" class="nav_content">
             <img src="assets/icon/compare.svg" alt="" />
@@ -59,7 +86,7 @@
       </nav>
     </div>
     <header class="header">
-      <div class="nav_wrap">
+      <div class="nav_wrap nav_bottom_med">
         <nav class="nav_bottom container">
           <a href="" class="nav_bottom_content">
             <img src="assets/icon/tablet 1.svg" alt="" />
@@ -796,14 +823,19 @@
       </section>
       <section class="section_banner">
         <article>
-          <h2>
-            Установите наш <br />
-            приложение
-          </h2>
-          <p>
-            стать владельцем <br />
-            Айфона на выгодном цене!
-          </p>
+          <div class="section_banner_image">
+            <img src="assets/imag/Mask.png" alt="">
+          </div>
+          <div class="section_banner_content">
+            <h2>
+              Установите наш <br />
+              приложение
+            </h2>
+            <p>
+              стать владельцем <br />
+              Айфона на выгодном цене!
+            </p>
+          </div>
         </article>
       </section>
     </main>
@@ -917,7 +949,7 @@
         prevEl: ".swiper-button-prev-custom",
       },
       breakpoints: {
-        1024: {
+        1025: {
           slidesPerView: 5,
           spaceBetween: 30,
         },
