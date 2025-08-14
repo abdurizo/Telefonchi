@@ -140,3 +140,13 @@
          margin: 5rem 3rem;
      }
  }
+
+ @media(max-width:576px) {
+     .section_1 .swiper-slide .content {
+         color: #fff;
+     }
+
+     .section_1 .swiper-slide .content .text {
+         color: #fff;
+     }
+ }

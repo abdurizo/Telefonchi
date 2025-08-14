@@ -68,3 +68,32 @@
         height: 300px;
     }
 }
+
+@media(max-width:768px) {
+    .section_banner_image {
+        height: 248px;
+    }
+}
+
+@media(max-width:576px) {
+    .section_banner {
+        padding: 5rem;
+    }
+
+    .section_banner_image {
+        height: 216px;
+        width: 270px;
+        left: 0px;
+    }
+}
+
+@media(max-width:420px) {
+    .section_banner {
+        padding: 5rem;
+    }
+
+    .section_banner_image {
+        height: 216px;
+        width: 250px;
+    }
+}

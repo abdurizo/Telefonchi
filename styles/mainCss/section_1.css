@@ -134,7 +134,7 @@
     .feature_box {
         grid-column: span 12;
         display: grid;
-        grid-template-columns: repeat(12,1fr);
+        grid-template-columns: repeat(12, 1fr);
         gap: 2rem;
     }
 
@@ -151,5 +151,27 @@
     .section_1 .grid_bottom {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+    }
+}
+
+@media(max-width:576px) {
+    .trustpay_box {
+        margin-bottom: 0;
+        grid-column: span 12;
+    }
+
+    .shipping_box {
+        grid-column: span 12;
+    }
+
+    .section_1 .grid_bottom {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    @media(max-width:420px) {
+        .section_1 .grid_bottom {
+            grid-template-columns: 1fr;
+        }
     }
 }

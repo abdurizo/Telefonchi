@@ -11,30 +11,30 @@
 </head>
 
 <body>
-<div class="nav_leftblock fixed_nav">
-          <div class="search">
-            <input class="search_input" type="text" placeholder="Поиск..." />
-            <button class="search_icon">
-              <img src="assets/icon/search.svg" alt="" />
-            </button>
-          </div>
-          <a href="!#" class="nav_content">
-            <img src="assets/icon/compare.svg" alt="" />
-            <span class="nav_content_text">Сравнивать</span>
-          </a>
-          <a href="!#" class="nav_content">
-            <img src="assets/icon/currency.svg" alt="" />
-            <span class="nav_content_text">Сравнивать</span>
-          </a>
-          <a href="!#" class="nav_content">
-            <img src="assets/icon/shopping-cart.svg" alt="" />
-            <span class="nav_content_text">Сравнивать</span>
-          </a>
-          <a href="!#" class="nav_content">
-            <img src="assets/icon/user.svg" alt="" />
-            <span class="nav_content_text">Сравнивать</span>
-          </a>
-        </div>
+  <div class="nav_leftblock fixed_nav">
+    <div class="search">
+      <input class="search_input" type="text" placeholder="Поиск..." />
+      <button class="search_icon">
+        <img src="assets/icon/search.svg" alt="" />
+      </button>
+    </div>
+    <a href="!#" class="nav_content">
+      <img src="assets/icon/compare.svg" alt="" />
+      <span class="nav_content_text">Сравнивать</span>
+    </a>
+    <a href="!#" class="nav_content">
+      <img src="assets/icon/currency.svg" alt="" />
+      <span class="nav_content_text">Сравнивать</span>
+    </a>
+    <a href="!#" class="nav_content">
+      <img src="assets/icon/shopping-cart.svg" alt="" />
+      <span class="nav_content_text">Сравнивать</span>
+    </a>
+    <a href="!#" class="nav_content">
+      <img src="assets/icon/user.svg" alt="" />
+      <span class="nav_content_text">Сравнивать</span>
+    </a>
+  </div>
   <div class="wrapper">
     <div class="nav_top_wrap">
       <nav class="nav_top container">
@@ -621,32 +621,50 @@
             </div>
           </button>
         </div>
-        <div class="swiper mySwiper_my">
+        <div class="swiper brand">
           <div class="swiper-wrapper">
-            <figure class="swiper-slide logo">
-              <div><img src="assets/imag/ASUS_Logo.png" alt="" /></div>
-              <figcaption class="logo_text">Asus</figcaption>
-            </figure>
-            <figure class="swiper-slide logo">
-              <div><img src="assets/imag/Apple-logo.png" alt="" /></div>
-              <figcaption class="logo_text">Asus</figcaption>
-            </figure>
-            <figure class="swiper-slide logo">
-              <div><img src="assets/imag/Xiaomi-Logo.png" alt="" /></div>
-              <figcaption class="logo_text">Asus</figcaption>
-            </figure>
-            <figure class="swiper-slide logo">
-              <div><img src="assets/imag/galaxy-s21.png" alt="" /></div>
-              <figcaption class="logo_text">Asus</figcaption>
-            </figure>
-            <figure class="swiper-slide logo">
-              <div><img src="assets/imag/shivaki.png" alt="" /></div>
-              <figcaption class="logo_text">Asus</figcaption>
-            </figure>
-            <figure class="swiper-slide logo">
-              <div><img src="assets/imag/1280px-PlayStation_logo.png" alt="" /></div>
-              <figcaption class="logo_text">Asus</figcaption>
-            </figure>
+            <div class="swiper-slide">
+              <figure class=" logo">
+                <div class="logo_icon"><img src="assets/imag/ASUS_Logo.png" alt="" /></div>
+                <figcaption class="logo_text">Asus</figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class=" logo">
+                <div class="logo_icon"><img src="assets/imag/Apple-logo.png" alt="" /></div>
+                <figcaption class="logo_text">Asus</figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class=" logo">
+                <div class="logo_icon"><img src="assets/imag/Xiaomi-Logo.png" alt="" /></div>
+                <figcaption class="logo_text">Asus</figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class=" logo">
+                <div class="logo_icon"><img src="assets/imag/shivaki.png" alt="" /></div>
+                <figcaption class="logo_text">Asus</figcaption>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class=" logo">
+                <div class="logo_icon"><img src="assets/imag/1280px-PlayStation_logo.png" alt="" /></div>
+                <figcaption class="logo_text">Asus</figcaption>
+              </figure>
+            </div>
+             <div class="swiper-slide">
+               <figure class=" logo">
+                <div class="logo_icon"><img src="assets/imag/Samsung_Logo.png" alt="" /></div>
+                <figcaption class="logo_text">Asus</figcaption>
+                           </figure>
+             </div>
+            <div class="swiper-slide">
+              <figure class=" logo">
+                <div class="logo_icon"><img src="assets/imag/Xiaomi-Logo.png" alt="" /></div>
+                <figcaption class="logo_text">Asus</figcaption>
+              </figure>
+            </div>        
           </div>
           <button class="swiper-button-next-custom">
             <img src="assets/icon/arrowright.svg" alt="" />
@@ -931,41 +949,10 @@
     </footer>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      navigation: {
-        nextEl: ".swiper-button-next-custom",
-        prevEl: ".swiper-button-prev-custom",
-      },
-    });
-
-    var swiper = new Swiper(".mySwiper_my", {
-      slidesPerView: 5,
-      spaceBetween: 30,
-      navigation: {
-        nextEl: ".swiper-button-next-custom",
-        prevEl: ".swiper-button-prev-custom",
-      },
-      breakpoints: {
-        1025: {
-          slidesPerView: 5,
-          spaceBetween: 30,
-        },
-        912: {
-          slidesPerView: 4.6,
-          spaceBetween: 20,
-        },
-        764: {
-          slidesPerView: 3.6,
-        },
-        575: {
-          slidesPerView: 2.5,
-        }
-      },
-    });
-  </script>
+  <script src="script/plugin.js"></script>
+  <script src="script/hero.js"></script>
+  <script src="script/discounts.js"></script>
+  <script src="script/brand.js"></script>
 </body>
 
 </html>

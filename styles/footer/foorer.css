@@ -94,3 +94,19 @@ footer {
     /* padding-top: 3rem !important; */
 }
 }
+@media(max-width:576px){
+    .footer_menu{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    .info{
+        padding-bottom: 20px !important;
+    }
+    @media(max-width:420px){
+        .footer_social{
+            flex-direction: column;
+            gap: 20px;
+            align-items: start;
+        }
+    }
+}
