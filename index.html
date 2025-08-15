@@ -11,8 +11,8 @@
 </head>
 
 <body>
-  <div class="nav_leftblock fixed_nav">
-    <div class="search">
+<div class="nav_leftblock fixed_nav">
+    <div class="search search_modal">
       <input class="search_input" type="text" placeholder="Поиск..." />
       <button class="search_icon">
         <img src="assets/icon/search.svg" alt="" />
@@ -59,7 +59,7 @@
         <button class="burger">
           <span></span>
         </button>
-        <div class="nav_leftblock ">
+        <div class="nav_leftblock">
           <div class="search">
             <input class="search_input" type="text" placeholder="Поиск..." />
             <button class="search_icon">
@@ -653,18 +653,18 @@
                 <figcaption class="logo_text">Asus</figcaption>
               </figure>
             </div>
-             <div class="swiper-slide">
-               <figure class=" logo">
+            <div class="swiper-slide">
+              <figure class=" logo">
                 <div class="logo_icon"><img src="assets/imag/Samsung_Logo.png" alt="" /></div>
                 <figcaption class="logo_text">Asus</figcaption>
-                           </figure>
-             </div>
+              </figure>
+            </div>
             <div class="swiper-slide">
               <figure class=" logo">
                 <div class="logo_icon"><img src="assets/imag/Xiaomi-Logo.png" alt="" /></div>
                 <figcaption class="logo_text">Asus</figcaption>
               </figure>
-            </div>        
+            </div>
           </div>
           <button class="swiper-button-next-custom">
             <img src="assets/icon/arrowright.svg" alt="" />
@@ -948,11 +948,23 @@
       </div>
     </footer>
   </div>
+  
+  <div class="modal">
+    <div class="search search_modal">
+      <input class="search_input" type="text" placeholder="Поиск..." />
+      <button class="search_icon close">
+        <img src="assets/icon/search.svg" alt="" />
+      </button>
+    </div>
+    <button class="close"></button>
+  </div>
 
   <script src="script/plugin.js"></script>
   <script src="script/hero.js"></script>
   <script src="script/discounts.js"></script>
   <script src="script/brand.js"></script>
+  <script src="script/burger.js"></script>
+  <script src="script/modal.js"></script>
 </body>
 
 </html>
