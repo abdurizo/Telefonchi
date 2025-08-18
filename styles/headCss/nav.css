@@ -153,20 +153,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.7rem;
     letter-spacing: 0%;
     text-align: left;
 }
-.nav_bottom_icon:hover{
-    stroke:#fff;
-}
-.nav_bottom_icon:hover path{
-    fill:#fff;
-    background-color: #5D5FEF;
-}
-.nav_bottom_content_text:hover{
+.nav_bottom_content:hover .nav_bottom_content_text{
     color: #5D5FEF;
 }
 .burger {
