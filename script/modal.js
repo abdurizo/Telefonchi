@@ -1,0 +1,13 @@
+'use strict'
+
+const modal = document.querySelector('.modal');
+const search = document.querySelector('.search_modal');
+const close = document.querySelector('.close');
+search.addEventListener('click', () => {
+    modal.classList.toggle('open');
+    console.log('active');
+})
+close.addEventListener('click', () => {
+    modal.classList.remove('open');
+    console.log('active');
+})
