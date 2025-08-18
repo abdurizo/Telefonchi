@@ -20,31 +20,33 @@
 }
 
 .close {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    cursor: pointer;
+    padding: 1px;
     position: relative;
-    top:-35px;
-    right:-25px;
-    width: 30px;
-    height: 20px;
-  background: none;
+    top: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
 }
 
-.close::before,
-.close::after {
-    content: '';
+.close_line_left,
+.close_line_right {
     position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    transition: 0.3s;
+    display: inline-block;
+    width: 2px;
+    height: 25px;
+    background: #fff;
 }
 
-.close::before {
-    transform: rotate(40deg);
-    top: 9px;
+.close_line_left {
+    transform: rotate(45deg);
 }
 
-.close::after {
-    transform: rotate(-40deg);
-    top: 9px;
+.close_line_right {
+    transform: rotate(-45deg);
+
 }

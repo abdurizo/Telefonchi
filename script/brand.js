@@ -24,8 +24,8 @@ slidesPerView: 6,
           slidesPerView: 2.6,
         },
         300: {
-          slidesPerView: 2.3,
-          spaceBetween: 30,
+          slidesPerView:1.6,
+          spaceBetween: 20,
         }
       },
     });

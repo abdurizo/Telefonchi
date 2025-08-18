@@ -1,0 +1,35 @@
+.sub_menu_wrap {
+    background: #fff;
+    font-size: 1.6rem;
+}
+
+.sub_menu {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+    padding: 3rem 0 6rem;
+}
+
+.sub_menu_content {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+}
+
+.sub_menu_title {
+    color: rgba(14, 24, 44, 1);
+    font-family: SFProDisplay-Medium;
+    line-height: 1.5rem;
+}
+
+.sub_menu_text {
+    color: #999797;
+    font-family: SFProDisplay-Medium;
+    letter-spacing: 0.5px;
+    line-height: 15px;
+    margin: 0.7rem 0;
+}
+
+.sub_menu_text:hover {
+    color: #5D5FEF;
+}

@@ -61,6 +61,14 @@
     font-family: SFProDisplay-Regular;
 }
 
+.nav .logo img {
+    width: 100%;
+}
+
+.nav .logo {
+    max-width: 150px;
+}
+
 .nav_content {
     display: flex;
     align-items: center;
@@ -132,6 +140,7 @@
     background: rgba(255, 193, 5, 1);
     border-radius: 100%;
     padding: 1.7rem;
+    cursor: pointer;
 }
 
 .nav_bottom {
@@ -150,11 +159,16 @@
     letter-spacing: 0%;
     text-align: left;
 }
-
-.nav_bottom_content_text {
-    margin-left: 1rem;
+.nav_bottom_icon:hover{
+    stroke:#fff;
 }
-
+.nav_bottom_icon:hover path{
+    fill:#fff;
+    background-color: #5D5FEF;
+}
+.nav_bottom_content_text:hover{
+    color: #5D5FEF;
+}
 .burger {
     display: none;
 }
@@ -190,6 +204,7 @@
         position: relative;
         width: 30px;
         height: 20px;
+        cursor: pointer;
     }
 
     .burger::after,
@@ -231,7 +246,7 @@
     }
 
     .burger.active span {
-       transform: scale(0);
+        transform: scale(0);
     }
 
     .nav_leftblock {
@@ -303,8 +318,24 @@
         height: 20px;
     }
 
-    .logo {
-        width: 20px !important;
+    .nav_logo {
+        max-width: 100px;
     }
 
+    .burger {
+        width: 20px;
+        height: 15px;
+    }
+
+    .burger span {
+        top: 6.5px;
+    }
+
+    .burger.active::before {
+        top: 6.5px;
+    }
+
+    .burger.active::after {
+        bottom: 6.5px;
+    }
 }

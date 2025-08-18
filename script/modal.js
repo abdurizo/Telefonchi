@@ -4,7 +4,7 @@ const modal = document.querySelector('.modal');
 const search = document.querySelector('.search_modal');
 const close = document.querySelector('.close');
 search.addEventListener('click', () => {
-    modal.classList.toggle('open');
+    modal.classList.add('open');
     console.log('active');
 })
 close.addEventListener('click', () => {
