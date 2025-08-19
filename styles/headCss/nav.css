@@ -45,12 +45,12 @@
 .nav_wrap {
     border-bottom: 1px solid rgb(143, 145, 149);
     padding: 2rem 0;
+    background-color: #fff;
 }
 
 .middle {
     position: sticky;
     top: 0px;
-    background-color: #fff;
     z-index: 3;
 }
 
@@ -159,6 +159,7 @@
     line-height: 1.7rem;
     letter-spacing: 0%;
     text-align: left;
+    position: relative;
 }
 .nav_bottom_content:hover .nav_bottom_content_text{
     color: #5D5FEF;
