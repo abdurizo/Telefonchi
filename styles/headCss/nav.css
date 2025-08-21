@@ -118,6 +118,8 @@
     border-radius: 50px;
     background-color: rgb(246, 246, 248, 1);
     display: flex;
+    justify-content: end;
+    align-items: center;
     outline: none;
     max-height: 5.5rem;
     border: 1px solid #ccc;
