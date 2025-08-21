@@ -97,10 +97,16 @@
 @media(max-width:420px) {
     .section_banner {
         padding: 5rem;
+        height: 366px;
     }
 
-    .section_banner_image {
-        height: 216px;
-        width: 250px;
+    .section_banner article {
+        flex-direction: column;
     }
+.section_banner_image {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+     width: 340px;
+}
 }
