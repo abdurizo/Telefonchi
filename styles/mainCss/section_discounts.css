@@ -56,16 +56,16 @@
     margin-bottom: 1.5rem;
 }
 
-.section_discounts .price {
+.section_discounts .price_wrap {
+    position: relative;
+}
+
+.section_discounts .price_wrap .price {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
 }
-.section_discounts .price.display{
-    /* opacity: 0; */
 
-}
 .section_discounts .price .old_price {
     color: #ccc;
     text-decoration: line-through;
@@ -85,31 +85,29 @@
     text-align: left;
 }
 
-
 .section_discounts .add {
     background: #FFC105;
     border-radius: 30px;
-    padding: 16px;
+    padding: 1.6rem;
     font-size: 1.4rem;
     font-family: SFProDisplay-Bold;
     color: #fff;
     display: flex;
     align-items: center;
     position: absolute;
+    gap: 1rem;
     top: 0;
-    right: -100%;
-   transition: 0.5s;
+    right: -120%;
+    transition: 0.3s;
 }
 
-.section_discounts .add.display {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* right: 55px; */
-}
+/* .section_discounts .add.show_add {
+    right: 0;
+} */
 
 .section_discounts .cart {
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 5rem;
     overflow: hidden;
     padding: 1.5rem;
     border-radius: 100%;
@@ -124,11 +122,16 @@
     fill: #fff;
 }
 
+.section_discounts .cart.color {
+    background-color: rgb(93, 95, 239);
+}
 
-@media (max-width: 1024px) {
-
-    .swiper-button-next-custom,
-    .swiper-button-prev-custom {
-        display: none !important;
+.section_discounts .cart.color svg path {
+    fill: #fff;
+}
+@media(max-width:1024px){
+    .section_discounts .cart{
+        /* width: 40px; */
+        /* height: 40px; */
     }
 }

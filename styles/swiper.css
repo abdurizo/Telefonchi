@@ -135,6 +135,25 @@
      }
  }
 
+ @media (max-width: 1024px) {
+
+     .swiper-button-next-custom,
+     .swiper-button-prev-custom {
+         display: none !important;
+     }
+
+     .section_1_button {
+         display: block !important;
+         display: flex !important;
+     }
+
+     .section_1 .swiper-slide .content {
+         margin-left: 11.4rem;
+         margin-top: 11.9rem;
+         margin:11.9rem  11.4rem ;
+     }
+ }
+
  @media(max-width:850px) {
      .section_1 .swiper-slide .content {
          margin: 5rem 3rem;

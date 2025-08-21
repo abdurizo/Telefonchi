@@ -45,3 +45,8 @@
     color: #5D5FEF;
 }
 
+@media(max-width:1024px) {
+    .sub_menu_wrap.open_sub_menu {
+        top: 200px;
+    }
+}
