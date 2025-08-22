@@ -39,7 +39,7 @@
     top: -5rem;
     right: -3rem;
     transition: 0.3s;
-    z-index: -1;
+    
 }
 
 .section_card .yellow {
@@ -93,41 +93,37 @@
         justify-self: center;
     }
 
-    @media(max-width:576px) {
-        .section_card .card .image {
-            transform: scale(0.8);
-        }
+}
+
+
+@media(max-width:768px) {
+    .section_card .card .image {
+        transform: scale(0.8);
     }
 
-    @media(max-width:420px) {
-        .section_card .card .image {
-            transform: scale(0.6);
-        }
+    .section_card .blue .image {
+        top: -70px;
+    }
 
-        .section_card .blue .image {
-            top: -70px;
-        }
+    .section_card .blue:hover .image {
+        top: -70px;
+        transform: scaleX(-1) scale(0.8);
+    }
 
-        .section_card .blue:hover .image {
-            top: -70px;
-            transform: scaleX(-1) scale(0.6);
-        }
+    .section_card .yellow .image {
+        top: -50px;
+    }
 
-        .section_card .yellow .image {
-            top: -50px;
-        }
-
-        .section_card .yellow:hover .image {
-            top: -6rem;
-            transform: rotate(30deg) scale(0.6)
-        }
-        .section_card .green .image {
-            top: -50px;
-        }
-        .section_card .green:hover .image {
-            top: -20px;
-            right: 0rem;
-            transform: rotate(-10deg) scale(0.6) scaleX(1.2);
-        }
+    .section_card .yellow:hover .image {
+        top: -2rem;
+        transform: rotate(30deg) scale(0.8)
+    }
+    .section_card .green .image {
+        top: -50px;
+    }
+    .section_card .green:hover .image {
+        top: -20px;
+        right: 0rem;
+        transform: rotate(-10deg) scale(0.6) scaleX(1.2);
     }
 }

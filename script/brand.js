@@ -13,12 +13,12 @@ slidesPerView: 6,
           slidesPerView: 5,
           spaceBetween: 30,
         },
-        912: {
+        920: {
           slidesPerView: 4.6,
           spaceBetween: 20,
         },
         764: {
-          slidesPerView: 3.6,
+          slidesPerView: 2.6,
         },
         575: {
           slidesPerView: 2.6,

@@ -154,11 +154,6 @@
      }
  }
 
- @media(max-width:850px) {
-     .section_1 .swiper-slide .content {
-         margin: 5rem 3rem;
-     }
- }
 
  @media(max-width:576px) {
      .section_1 .swiper-slide .content {
@@ -168,4 +163,12 @@
      .section_1 .swiper-slide .content .text {
          color: #fff;
      }
+ }
+ @media (max-width: 375px) {
+     .section_1 .section_1_button{
+         padding: 0.2rem;
+         align-items: center;
+         justify-content: center;
+     }
+    
  }

@@ -154,6 +154,12 @@
     }
 }
 
+@media(max-width:850px) {
+    .section_1 .swiper-slide .content {
+        margin: 5rem 3rem;
+    }
+}
+
 @media(max-width:576px) {
     .trustpay_box {
         margin-bottom: 0;
@@ -169,9 +175,28 @@
         gap: 2rem;
     }
 
-    @media(max-width:420px) {
-        .section_1 .grid_bottom {
-            grid-template-columns: 1fr;
-        }
+}
+
+@media(max-width:450px) {
+    .section_1 .content {
+        margin: 5rem 6rem !important;
+    }
+}
+
+@media(max-width:440px) {
+    .section_1 .grid_bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .section_1 .content {
+        margin: 5rem 8rem !important;
+    }
+
+    .section_1 .swiper-slide .title {
+        font-size: 2.6rem;
+    }
+
+    .section_1 .swiper-slide .title{
+        font-size: 2rem;
     }
 }

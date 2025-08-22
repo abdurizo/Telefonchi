@@ -129,9 +129,13 @@
 .section_discounts .cart.color svg path {
     fill: #fff;
 }
-@media(max-width:1024px){
-    .section_discounts .cart{
-        /* width: 40px; */
-        /* height: 40px; */
-    }
+@media(max-width:450px){
+   .section_discounts .add {
+    padding: 1rem;
+   }
+   .section_discounts .header {
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+   }
 }

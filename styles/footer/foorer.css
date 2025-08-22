@@ -110,3 +110,8 @@ footer {
         }
     }
 }
+@media(max-width:440px){
+    footer{
+        margin-top: 5rem;
+    }
+}
