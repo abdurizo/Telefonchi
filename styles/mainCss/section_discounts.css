@@ -118,6 +118,7 @@
 
 .section_discounts .cart:hover {
     background-color: rgb(93, 95, 239);
+    cursor: pointer;
 }
 
 .section_discounts .cart:hover svg path {
@@ -126,6 +127,7 @@
 
 .section_discounts .cart.color {
     background-color: rgb(93, 95, 239);
+    pointer-events: none;
 }
 
 .section_discounts .cart.color svg path {

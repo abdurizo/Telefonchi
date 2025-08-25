@@ -10,7 +10,9 @@ document.querySelectorAll('.content').forEach(content => {
     const priceProduc = content.querySelector('.price');
     const addProduc = content.querySelector('.add');
 
-    if (!cartBtn || !priceProducWrap || !addProduc) return; // <-- проверка
+    if (!cartBtn || !priceProducWrap || !addProduc){
+        return; 
+    } 
 
     cartBtn.addEventListener('click', () => {
         count++

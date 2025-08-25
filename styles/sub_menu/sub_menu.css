@@ -45,14 +45,55 @@
     color: #5D5FEF;
 }
 
+.comeback svg path {
+    fill: rgba(14, 24, 44, 1);
+}
+
 @media(max-width:1024px) {
     .sub_menu_wrap.open_sub_menu {
         top: 200px;
     }
 }
+
 @media(max-width:920px) {
     .sub_menu_wrap.open_sub_menu {
-        top: 100px;  
-        bottom: 0;   
+        top: 100px;
+        bottom: 0;
+    }
+}
+
+@media(max-width:912px) {
+    .sub_menu {
+        /* grid-template-columns: repeat(6, 1fr); */
+        gap: 20px;
+        padding: 2rem 0 4rem;
+    }
+
+    .sub_menu_content {
+        grid-column: span 4;
+    }
+
+    .sub_menu_text {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:500px) {
+    .sub_menu_wrap.open_sub_menu {
+        top: 60px;
+    }
+
+    .sub_menu_content {
+        grid-column: span 4;
+        padding: 0 2rem;
+    }
+}
+@media(max-width:400px) {
+    .sub_menu_wrap {
+        overflow-y: scroll  ;
+    }
+    .sub_menu_content {
+        grid-column: span 6;
+        padding: 0 2rem;
     }
 }
