@@ -1,0 +1,170 @@
+.product_demonstration {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.product_content {
+    padding-right: 6rem;
+    background-color: rgba(43, 43, 226, 0.383);
+}
+
+.product_content_category {
+    font-family: SFProDisplay-Regular;
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgba(14, 24, 44, .5);
+}
+
+.product_content_title {
+    font-family: SFProDisplay-Medium;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #0e182c;
+    max-width: 31rem;
+    margin: 2rem 0 2.5rem;
+}
+
+.product_content_text {
+    max-width: 31rem;
+    font-family: SFProDisplay-Regular;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgba(14, 24, 44, .5);
+}
+
+.product_images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.7rem;
+    margin-top: 5.2rem;
+}
+
+.product_image_card.active {
+    background-color: rgba(93, 95, 239, .2);
+}
+
+.product_image_card {
+    border: 1px solid rgba(93, 95, 239, .5);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.5rem;
+    height: 8.5rem;
+    padding: 10px 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+product_image_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.product_big_img_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(205, 225, 78, 0.496);
+}
+
+.product_big_img {
+    background-color: rgba(93, 95, 239, .5);
+    border-radius: 100%;
+    width: 30rem;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product_big_img img {
+    transform: rotate(20deg) scale(1.9);
+}
+
+.product_info_detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed rgba(14, 24, 44, .2);
+    padding: 5px;
+    margin-bottom: 3rem;
+}
+
+.product_detail_title {
+    font-family: SFProDisplay-Regular;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: rgba(14, 24, 44, .5);
+}
+
+.product_info_options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product_options_colors {
+    display: flex;
+    align-items: center;
+}
+
+.product_detail_text {
+    color: #0e182c;
+    font-family: SFProDisplay-Bold;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+
+.product_detail_text.price {
+    color: rgb(93, 95, 239);
+}
+
+.product_options_color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    border: 1px;
+}
+
+.circle_color {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+}
+
+.circle_color.black {
+    background-color: #000;
+}
+.circle_color.white{
+    border: 0.1rem solid rgba(14, 24, 44, 0.2);
+}
+.circle_color.violet{
+    background: rgba(122, 57, 206, 1);
+}
+.circle_color.yellow{
+    background: rgba(255, 193, 5, 1);
+}
+.product_options_quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+.border_radius{
+    border-radius: 100%;
+    border: 0.1rem solid rgba(14, 24, 44, 0.2);
+    width: 48px;
+    height: 48px;
+    color: rgb(93, 95, 239);
+}

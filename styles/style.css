@@ -6,6 +6,8 @@
 @import url(container/container.css);
 @import url(modal/modal.css);
 @import url(sub_menu/sub_menu.css);
+@import url(product/productTop.css);
+@import url(product/productDemonstration.css);
 
 * {
     margin: 0;

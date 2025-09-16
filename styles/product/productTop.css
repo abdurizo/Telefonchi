@@ -1,0 +1,27 @@
+
+.product_action_bar{
+    margin: 3rem 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    grid-template-columns: repeat(12,1fr);
+}
+.product_action_bar_order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.product_action_bar_icon{
+    padding: 10px;
+    border-radius: 100%;
+    border: 1px solid rgba(60, 85, 165, 0.2);
+}
+.product_action_bar_icon.active svg path{
+    fill: #fff;
+}
+.product_action_bar_icon.active{
+    background-color:#5D5FEF ;
+}
