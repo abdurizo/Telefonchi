@@ -2,12 +2,16 @@
 @import url(headCss/nav.css);
 @import url(mainCss/main.css);
 @import url(swiper.css);
+@import url(buttons/viewAll.css);
+@import url(buttons/installments.css);
 @import url(footer/foorer.css);
 @import url(container/container.css);
 @import url(modal/modal.css);
 @import url(sub_menu/sub_menu.css);
 @import url(product/productTop.css);
 @import url(product/productDemonstration.css);
+@import url(product/productInformation.css);
+
 
 * {
     margin: 0;
@@ -51,37 +55,9 @@ button{
     flex: 1 1 auto;
 }
 
-.view_all {
-    background: linear-gradient(89.03deg, #FFB905 1.26%, #FFC805 98.89%);
-    border-radius: 13px;
-    padding: 1rem 2rem;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    transition: 0.3s;
-}
 
-.view_all .image {
-    padding: 0.8rem;
-    background: rgba(255, 170, 5, 1);
-    width: 3.2rem;
-    height: 3.2rem;
-    border-radius: 100%;
-    margin-left: 1rem;
-}
 
-.view_all .image svg path {
-    width: 100%;
-    height: 100%;
-    fill: #fff;
-}
 
-.view_all:hover {
-    scale: 1.1;
-    transition: 0.3s;
-}
 .fly {
     position: fixed;
     pointer-events: none;

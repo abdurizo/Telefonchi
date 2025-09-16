@@ -1,0 +1,5 @@
+.product_information_tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

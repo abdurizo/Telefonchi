@@ -6,7 +6,6 @@
 
 .product_content {
     padding-right: 6rem;
-    background-color: rgba(43, 43, 226, 0.383);
 }
 
 .product_content_category {
@@ -73,7 +72,6 @@ product_image_card img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(205, 225, 78, 0.496);
 }
 
 .product_big_img {
@@ -106,11 +104,12 @@ product_image_card img {
     color: rgba(14, 24, 44, .5);
 }
 
-.product_info_options{
+.product_info_options {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .product_options_colors {
     display: flex;
     align-items: center;
@@ -134,37 +133,87 @@ product_image_card img {
     width: 48px;
     height: 48px;
     border-radius: 100%;
-    border: 1px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.product_options_color.black_border.active {
+    border-color: #000;
+}
+
+.product_options_color.white_border.active {
+    border-color: rgba(14, 24, 44, 0.2);
+}
+.product_options_color.violet_border.active {
+    border-color: rgba(122, 57, 206, 1);
+}
+.product_options_color.yellow_border.active {
+    border-color: rgba(255, 193, 5, 1);
 }
 
 .circle_color {
     width: 32px;
     height: 32px;
     border-radius: 100%;
+    cursor: pointer;
 }
 
 .circle_color.black {
     background-color: #000;
 }
-.circle_color.white{
+
+.circle_color.white {
     border: 0.1rem solid rgba(14, 24, 44, 0.2);
 }
-.circle_color.violet{
+
+.circle_color.violet {
     background: rgba(122, 57, 206, 1);
 }
-.circle_color.yellow{
+
+.circle_color.yellow {
     background: rgba(255, 193, 5, 1);
 }
-.product_options_quantity{
+
+.product_options_quantity {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.6rem;
+    gap: 1rem;
 }
-.border_radius{
+
+.number {
+    font-family: SFProDisplay-Medium;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    /* background-color: aqua; */
+}
+
+.decrement,
+.increment {
     border-radius: 100%;
-    border: 0.1rem solid rgba(14, 24, 44, 0.2);
+    border: 1px solid rgba(14, 24, 44, 0.2);
     width: 48px;
     height: 48px;
     color: rgb(93, 95, 239);
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.decrement div {
+    width: 15px;
+    height: 2.5px;
+    background-color: rgb(93, 95, 239);
+}
+
+.buttons_buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
 }
