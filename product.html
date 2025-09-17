@@ -525,23 +525,26 @@
               эффективную глажку и отличный результат.
             </p>
             <div class="product_images">
-              <div class="product_image_card">
+              <div class="product_image_card" data-filter-img="one">
                 <img src="./assets/imag/iron-small-1.png" alt="" />
               </div>
-              <div class="product_image_card">
+              <div class="product_image_card" data-filter-img="two">
                 <img src="./assets/imag/iron-small-2.png" alt="" />
               </div>
-              <div class="product_image_card">
+              <div class="product_image_card" data-filter-img="three">
                 <img src="./assets/imag/iron-small-3.png" alt="" />
               </div>
-              <div class="product_image_card">
+              <div class="product_image_card" data-filter-img="four">
                 <img src="./assets/imag/iron-small-4.png" alt="" />
               </div>
             </div>
           </div>
           <div class="product_big_img_wrap">
-            <div class="product_big_img">
-              <img src="./assets/imag/iron.png" alt="" />
+            <div class="product_big_img" >
+              <img src="./assets/imag/iron.png" class="big_img active" data-filter-img="one" alt="" />
+              <img src="./assets/imag/hairbrush.png" class="big_img" data-filter-img="two" alt="" />
+              <img src="./assets/imag/photo_camera.png" class="big_img" data-filter-img="three" alt="" />
+              <img src="./assets/imag/galaxy-s21.png" class="big_img" data-filter-img="four" alt="" />
             </div>
           </div>
           <div class="product_info">
@@ -637,10 +640,15 @@
       </section>
       <section class="product_information">
         <div class="product_information_tabs">
-          <span class="product_tabs">Описание</span>
-          <span class="product_tabs">Характеристика</span>
-          <span class="product_tabs">Отзывы</span>
-        </div>        
+          <span class="product_tab active" data-info="description">Описание</span>
+          <span class="product_tab" data-info="characteristic">Характеристика</span>
+          <span class="product_tab" data-info="reviews">Отзывы</span>
+        </div>     
+           <div class="product_information_contecst">
+            <div class="product_contecst_description show" data-info="description" >sdfjhsddfjh</div>
+            <div class="product_contecst_description" data-info="characteristic">js</div>
+            <div class="product_contecst_description" data-info="reviews">php</div>
+           </div>
       </section>
       <section class="section_discounts section">
         <div class="header">
@@ -1224,6 +1232,8 @@
   <script src="script/subMenu.js"></script>
   <script src="script/addProduct.js"></script>
   <script src="script/productInfoOptions.js"></script>
+  <script src="script/fiterImg.js"></script>
+  <script src="script/filterInfo.js"></script>
 </body>
 
 </html>
