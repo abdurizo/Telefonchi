@@ -88,7 +88,6 @@ product_image_card img {
 }
 
 .product_big_img .big_img {
-    /* transform: scaleY(1.1); */
     position: absolute;
     inset: 0;
     display: block;

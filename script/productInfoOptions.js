@@ -1,7 +1,7 @@
 
 const infoOptions = document.querySelector('.product_info_options');
 const number = document.querySelector('.number');
-let countQuantity = 0
+// let countQuantity = 0
 
 if (!infoOptions) {
     console.warn('Не найден .product_info_options в DOM');
