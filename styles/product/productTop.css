@@ -32,7 +32,7 @@
     transition: 0.3s;
 }
 
-.product_action_bar_order.active .product_action_bar_icon{
+.product_action_bar_order.active .product_action_bar_icon {
     background-color: #5D5FEF;
     transition: 0.3s;
 }
@@ -41,34 +41,44 @@
     font-family: SFProDisplay-Medium;
     font-size: 1.6rem;
 }
-.share{
+
+.share {
     position: relative;
 }
+
 .social_media_wrap {
     background-color: #fff;
     border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 4px 40px rgba(21, 42, 108, .12);
-   
+
     position: absolute;
-    top: 75px;
-    left:0px;
+    top: 65px;
+    left: 0px;
     right: 0;
-    z-index: 1;
+    z-index: -22222;
     width: 200px;
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(50px);
     transition: opacity 600ms ease, transform 600ms ease;
+    /* pointer-events: none; */
 }
-.social_media_wrap.show{
+
+.social_media_wrap.show {
     opacity: 1;
     /* transform: translateY(-5px); */
     transform: translateY(0);
+    z-index: 1;
 }
+
 .social_media {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.social_media:not(:last-child) {
+    margin-bottom: 2.3rem;
 }
 
 .social_text {
@@ -77,6 +87,7 @@
     font-family: SFProDisplay-Medium;
     transform: 0.3s;
 }
-.social_text:hover{
+
+.social_text:hover {
     color: #5d5fef;
 }
