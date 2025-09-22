@@ -163,12 +163,13 @@
     padding: 1.7rem;
     cursor: pointer;
 }
-
+.nav_wrap{
+    position: relative;
+}
 .nav_bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden;
 }
 
 .nav_bottom_content {
@@ -181,8 +182,8 @@
     line-height: 1.7rem;
     letter-spacing: 0%;
     text-align: left;
-    position: relative;
-    overflow: hidden;
+    /* position: relative; */
+    /* overflow: hidden; */
 }
 
 .nav_bottom_content:hover .nav_bottom_content_text {

@@ -91,3 +91,28 @@
 .social_text:hover {
     color: #5d5fef;
 }
+
+.product_content.top {
+    display: none;
+}
+
+@media(max-width:912px) {
+    .product {
+        margin-top: 80px;
+    }
+
+    .product_content.top {
+        padding: 0;
+        /* display: block; */
+    }
+
+    .product_content.top .product_content_title {
+        max-width: none;
+    }
+
+    .product_content.top .product_content_text {
+        max-width: none;
+    }
+
+
+}

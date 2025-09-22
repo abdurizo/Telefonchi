@@ -153,7 +153,11 @@
         gap: 2rem;
     }
 }
-
+@media(max-width:912px){
+    .section_1{
+        margin-top: 36px;   
+    }
+}
 @media(max-width:850px) {
     .section_1 .swiper-slide .content {
         margin: 5rem 3rem;
