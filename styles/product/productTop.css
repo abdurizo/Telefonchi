@@ -113,6 +113,21 @@
     .product_content.top .product_content_text {
         max-width: none;
     }
+}
 
+@media(max-width:412px) {
+    .product {
+        margin-top: 50px;
+    }
 
+    .product_action_bar {
+        /* display: none; */
+        /* gap: 1rem; */
+        /* display: block; */
+    }
+
+    .product_top_text {
+        display: none;
+        background: #5D5FEF;
+    }
 }

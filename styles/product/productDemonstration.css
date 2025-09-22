@@ -317,3 +317,10 @@ product_image_card img {
         margin-top: 3rem;
     }
 }
+@media(max-width:412px){
+    .buttons_buy{
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+    }
+}

@@ -185,6 +185,9 @@
     .section_1 .content {
         margin: 5rem 6rem !important;
     }
+     .section_1{
+        margin-top: 16px;   
+    }
 }
 
 @media(max-width:440px) {
