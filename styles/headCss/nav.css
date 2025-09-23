@@ -48,7 +48,7 @@
     background-color: #fff;
 }
 
-.middle {
+.nav_wrap.middle {
     position: sticky;
     top: 0px;
     z-index: 3;
