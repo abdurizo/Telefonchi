@@ -29,9 +29,15 @@
 }
 
 .view_all:hover {
-    border: 1px solid #FFB905;
-    color: #FFB905;
+    /* border: 1px solid #FFB905; */
+    /* color: #FFB905; */
     /* background: #fff; */
-    background: none;
-    transition: 0.3s;
+    /* background: none; */
+    /* transition: 0.3s; */
 }
+
+/* .buttons_buy:has(.view_all:hover) .installments {
+  background: linear-gradient(89.03deg, #FFB905 1.26%, #FFC805 98.89%);
+  color: #fff;
+  transition: 0.3s;
+} */

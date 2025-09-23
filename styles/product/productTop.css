@@ -59,14 +59,14 @@
     width: 200px;
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 600ms ease, transform 600ms ease;
+    transition: opacity 100ms ease, transform 100ms ease;
     /* pointer-events: none; */
     /* display: none; */
 }
 
 .social_media_wrap.show {
     opacity: 1;
-    /* transform: translateY(-5px); */
+    transition: opacity 300ms ease, transform 300ms ease;
     transform: translateY(0);
     z-index: 1;
 }

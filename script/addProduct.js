@@ -14,10 +14,10 @@ document.querySelectorAll('.content').forEach(content => {
         return; 
     } 
 
-    cartBtn.addEventListener('click', () => {
+    cartBtn.addEventListener('click', (e) => {
         count++
         navCardCircle.textContent = count;
-
+e.preventDefault()
         cartBtn.classList.add('color')
         // показываем эффект только для этой карточки
         setTimeout(() => {

@@ -1,4 +1,4 @@
-.view_all.installments{
+.view_all.installments {
     background: #fff;
     border-radius: 13px;
     padding: 1rem 2rem;
@@ -12,7 +12,12 @@
 
 
 .view_all.installments:hover {
-     background: linear-gradient(89.03deg, #FFB905 1.26%, #FFC805 98.89%);
-     color: #fff;
+    background: linear-gradient(89.03deg, #FFB905 1.26%, #FFC805 98.89%);
+    color: #fff;
+    transition: 0.1s;
 }
-
+.view_all.installments:hover + .view_all{
+    background: #fff;
+    color: #FFB905;
+    transition: 0.3s;
+}
