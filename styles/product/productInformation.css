@@ -205,19 +205,17 @@
 }
 
 @media(max-width:810px) {
-    .product_contecst_characteristic {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .product_characteristic_info {
         box-shadow: 0 1px 10px rgba(21, 42, 108, .12);
     }
-}
-@media(max-width:810px) {
     .product_contecst_characteristic {
         grid-template-columns: repeat(1, 1fr);
     }
-    .product_contecst_reviews{
-         grid-template-columns: repeat(1, 1fr);
-    }
+    
+    .product_review_form {
+    grid-column: span 12;
+}
+.product_review_users {
+    grid-column: span 12;
+}
 }
