@@ -11,6 +11,7 @@
 @import url(product/productTop.css);
 @import url(product/productDemonstration.css);
 @import url(product/productInformation.css);
+@import url(registration/registration.css);
 
 
 * {
